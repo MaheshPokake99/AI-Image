@@ -47,6 +47,21 @@ const Image = () => {
           <Button handleSubmit={handleSubmit}></Button>
         </div>
         <Display imageURL={imageURL} loading={loading}></Display>
+        {
+          imageURL && (
+            <a
+            style={{
+              background: 'linear-gradient(81.02deg,#fa5560 -23.49%, #b14bf4 45.66%, #4d91ff 194.8%)',
+              backgroundClip: 'text',
+              color: 'transparent'
+            }}
+            href={imageURL}
+            download={`${prompt}-image.png`}
+            className='border-b-2 px-4 py-2 rounded-lg text-center font-semibold text-lg w-40 h-10 mx-auto'>
+              Download
+            </a>
+          )
+        }
       </div>
     </div>
   )
