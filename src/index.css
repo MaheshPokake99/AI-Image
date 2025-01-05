@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.light-effect {
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.light-effect::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    linear-gradient(to top left, rgba(247, 246, 246, 0.2), rgba(0, 0, 0, 0) 50%);
+  background-size: 100% 100%;
+  z-index: -1;
+  animation: pulse 4.5s infinite;
+}
+
+.graph-background {
+  background-image:
+    linear-gradient(to right, rgba(104, 103, 103, 0.1) 1px, transparent 1px),
+    linear-gradient(to top, rgba(104, 103, 103, 0.1) 1px, transparent 1px);
+  background-size: 30px 30px;
+  z-index: 0;
+}
+
+.loader {
+  width: 50px;
+  aspect-ratio: 1;
+  display: grid;
+  border: 4px solid #0000;
+  border-radius: 50%;
+  border-color: #ccc #0000;
+  animation: l16 1s infinite linear;
+}
+.loader::before,
+.loader::after {    
+  content: "";
+  grid-area: 1/1;
+  margin: 2px;
+  border: inherit;
+  border-radius: 50%;
+}
+.loader::before {
+  border-color: #f03355 #0000;
+  animation: inherit; 
+  animation-duration: .5s;
+  animation-direction: reverse;
+}
+.loader::after {
+  margin: 8px;
+}
+@keyframes l16 { 
+  100%{transform: rotate(1turn)}
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
