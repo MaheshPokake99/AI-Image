@@ -5,7 +5,7 @@ import FluidSimulation from './FluidSimulation.jsx';
 
 function App() {
   return (
-    <div className="bg-black h-full graph-background light-effect">
+    <div className="bg-black h-full light-effect">
       <FluidSimulation />
       <BrowserRouter>
          <div className="fixed top-0 left-0 right-0 bg-white/5 rounded-lg h-16 w-full border-b-2 border-white/50 z-10">
