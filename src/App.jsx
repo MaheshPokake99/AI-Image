@@ -2,11 +2,13 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Image from './component/Page/Image'
 import Logo from './component/Logo'
 import FluidSimulation from './FluidSimulation.jsx';
+import Cursor from './Cursor.jsx';
 
 function App() {
   return (
     <div className="bg-black h-full light-effect">
       <FluidSimulation />
+      <Cursor></Cursor>
       <BrowserRouter>
          <div className="fixed top-0 left-0 right-0 bg-white/5 rounded-lg h-16 w-full border-b-2 border-white/50 z-10">
           <Logo></Logo>

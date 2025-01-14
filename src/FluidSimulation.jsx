@@ -92,22 +92,22 @@ function FluidSimulation() {
     <div>
       <canvas id="canvas"></canvas>
       <h1 id="animated-text">
-        <span className="letter-0">F</span>
-        <span className="letter-1">L</span>
-        <span className="letter-2">U</span>
-        <span className="letter-3">I</span>
-        <span className="letter-4">D</span>
-        <span className="letter-5"> </span>
-        <span className="letter-6">S</span>
-        <span className="letter-7">I</span>
-        <span className="letter-8">M</span>
-        <span className="letter-9">U</span>
-        <span className="letter-10">L</span>
-        <span className="letter-11">A</span>
-        <span className="letter-12">T</span>
-        <span className="letter-13">I</span>
-        <span className="letter-14">O</span>
-        <span className="letter-15">N</span>
+        <span className="letter-0"></span>
+        <span className="letter-1"></span>
+        <span className="letter-2"></span>
+        <span className="letter-3"></span>
+        <span className="letter-4"></span>
+        <span className="letter-5"></span>
+        <span className="letter-6"></span>
+        <span className="letter-7"></span>
+        <span className="letter-8"></span>
+        <span className="letter-9"></span>
+        <span className="letter-10"></span>
+        <span className="letter-11"></span>
+        <span className="letter-12"></span>
+        <span className="letter-13"></span>
+        <span className="letter-14"></span>
+        <span className="letter-15"></span>
       </h1>
     </div>
   );
