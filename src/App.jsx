@@ -2,7 +2,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Image from './component/Page/Image'
 import Logo from './component/Logo'
 import FluidSimulation from './FluidSimulation.jsx';
-import Cursor from './Cursor.jsx';
+import Cursor from './component/Cursor.jsx';
 
 function App() {
   return (
