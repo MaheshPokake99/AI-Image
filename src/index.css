@@ -119,15 +119,16 @@ body {
 
 .cursor__ball--big circle {
   fill: transparent;
-  stroke: #fff;  
+  stroke: #fff;
   stroke-width: 2;
 }
 
 .cursor__ball--small circle {
-  fill: #fff; 
+  fill: #fff;
 }
 
-.left, .right {
+.left,
+.right {
   height: 100%;
   width: 100%;
   display: flex;
@@ -144,10 +145,37 @@ body {
   border-bottom: 2px solid #000;
 }
 
-.right h1, .right p, .right a {
+.right h1,
+.right p,
+.right a {
   color: #000;
 }
 
 .hoverable {
   cursor: pointer;
+  transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+.hoverable:hover {
+  text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.8); /* glow effect */
+  transform: scale(1.2); /* scale up the text */
+}
+
+.left,
+.right {
+  height: 100vh;
+}
+
+.right {
+  background: #fff;
+}
+
+.right a {
+  border-bottom: 2px solid #000;
+}
+
+.right h1,
+.right p,
+.right a {
+  color: #000;
 }

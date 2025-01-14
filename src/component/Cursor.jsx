@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import gsap from "gsap"; // Corrected import
+import gsap from "gsap";
 
 const Cursor = () => {
   useEffect(() => {
@@ -10,8 +10,8 @@ const Cursor = () => {
     // Move the cursor
     const onMouseMove = (e) => {
       gsap.to($bigBall, 0.4, {
-        x: e.pageX - 30, // Adjusted for larger cursor
-        y: e.pageY - 30, // Adjusted for larger cursor
+        x: e.pageX - 15,
+        y: e.pageY - 15,
       });
       gsap.to($smallBall, 0.1, {
         x: e.pageX - 5,
@@ -47,8 +47,8 @@ const Cursor = () => {
   return (
     <div className="cursor">
       <div className="cursor__ball cursor__ball--big">
-        <svg height="50" width="50">
-          <circle cx="25" cy="25" r="20" strokeWidth="0" fill="transparent"></circle> {/* Set fill to transparent */}
+        <svg height="30" width="30">
+          <circle cx="15" cy="15" r="12" strokeWidth="0"></circle>
         </svg>
       </div>
       <div className="cursor__ball cursor__ball--small">
