@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Button } from '../Button';
 import Heading from '../Heading';
 import Input from '../Input';
@@ -9,6 +9,7 @@ const Image = () => {
   const [prompt, setPrompt] = useState('');
   const [loading, setLoading] = useState(false);
 
+useEffect(()=>{
   const query = async (data) => {
     try {
       const response = await fetch(
@@ -31,7 +32,7 @@ const Image = () => {
       alert('An error occurred while generating the image. Please try again.');
     }
   };
-
+},[]);
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (!prompt) return;
